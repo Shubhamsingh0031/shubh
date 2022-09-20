@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100&family=Baloo+Bhai+2:wght@600;700&family=Lato:ital,wght@1,900&display=swap');
+:root{
+    --main-bg-color:#2874f0
+}
+    
+    
+    *{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 58px;
+    background:var(--main-bg-color);
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 58px;
+}
+
+.container{
+    min-height: calc(255vh - 58px - 12vh);
+    /* min-height: 100%; */
+   
+}
+nav{
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  
+}
+nav ul li a:hover{
+    color:white;
+  font-weight: bold;
+  
+}
+footer{
+    height: 12vh;
+    background-color:var(--main-bg-color);
+    color:white;
+    font-family: 'Anek Telugu', sans-serif;
+    cursor: pointer;
+    /* position: relative;
+    top: 300px; */
+}
+footer:hover{
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+  }
+.search input{
+    width: 30vw;
+    height: 23px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+
+}
+.search button:hover{
+     font-weight: bold;
+}
+
+
+.slider{
+    margin: auto;
+    width: 85vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+.card{
+    max-width: 91vw;
+    margin:10px auto;
+    /* overflow:scroll; */
+}
+.card h2{
+    font-family: 'Anek Telugu', sans-serif;
+}
+.card-item{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    
+}
+.card-item img:hover{
+    transform: scale(1.06);
+}
+
+.cards{
+    display: flex;
+   
+    align-items: center;
+}
+.mainslider{
+    width: 49%;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://images.unsplash.com/photo-1600577916048-804c9191e36c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+    background-size: 110% 110%;
+    box-shadow: 1px 2px 5px 3px black;
+    animation:  slider 80s infinite linear;
+    animation-delay: 1s;
+    cursor: pointer;
+    }
+
+@keyframes slider{
+   0%{
+    background-image: url(https://images.unsplash.com/photo-1600577916048-804c9191e36c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+   }
+   10%{
+    background-image: url(https://images.pexels.com/photos/1437318/pexels-photo-1437318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+   20%{
+    background-image: url(https://images.pexels.com/photos/625422/pexels-photo-625422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   
+}
+   30%{
+    background-image: url(https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+   40%{
+    background-image: url(https://images.pexels.com/photos/1233258/pexels-photo-1233258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+   50%{
+    background-image: url(https://images.pexels.com/photos/4887165/pexels-photo-4887165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+   60%{
+    background-image: url(https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+   70%{
+    background-image: url(https://images.pexels.com/photos/4353927/pexels-photo-4353927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+   80%{
+    background-image: url(https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   }
+90%{
+    background-image: url(https://images.pexels.com/photos/8612970/pexels-photo-8612970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+}
+.card{
+ position: relative;   
+ top: 270px;
+ overflow: hidden;
+ cursor: pointer;
+ 
+}
+
+
